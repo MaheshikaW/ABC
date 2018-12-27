@@ -11,7 +11,7 @@ export class StudentserviceService {
     private http:Http
   ) { }
 
-  insertStudent(student){
+  addStudent(student){
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
     return this.http.post('http://localhost:3000/student/newstudent',student,{headers:headers})
